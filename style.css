@@ -38,6 +38,14 @@ canvas {
     user-select: none;
 }
 
+@media (max-width:800px) {
+    .tutorial {
+    grid-template-columns: 250px 250px;
+        
+    }
+}
+
+
 .tutorial > div {
     margin: 0;
     margin-top: 10px;
