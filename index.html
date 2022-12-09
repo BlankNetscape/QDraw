@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QDraw</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1>QDraw</h1>
+        <canvas id="cnv" height="300" width="300"></canvas>
+        <div #tmpWrap></div>
+        <div class="controlls">
+            <input type="text" id="textbox" placeholder="e.g: D20 R20 BD20 R40">
+            <input type="button" value="Run" id="run">
+            <input type="button" value="Clear" id="clr">
+        </div>
+        <div class="tutorial">
+            <div>
+                <p><b>U[n]</b> - moves cursor ↑ n pixels.</p>
+                <p><b>D[n]</b> - moves cursor ↓ n pixels.</p>
+                <p><b>L[n]</b> - moves cursor ← n pixels.</p>
+                <p><b>R[n]</b> - moves cursor → n pixels.</p>
+            </div>
+            <div>
+                <p><b>H[n]</b> - moves cursor ↖ n pixels.</p>
+                <p><b>E[n]</b> - moves cursor ↗ n pixels.</p>
+                <p><b>G[n]</b> - moves cursor ↙ n pixels.</p>
+                <p><b>F[n]</b> - moves cursor ↘ n pixels.</p>
+            </div>
+            <div>
+                <p><b>[B]</b> - Prefix that moves cursor without drawing.</p>
+                <p><b>[N]</b> - Prefix that draws and returns cursor to original position.</p>
+            </div>
+            <div>
+                <p><b>M[{+|-}]x%,y%</b> - Moves cursor to point x%,y%. If x% is preceded by + or -, moves relative to the current point.</p>
+            </div>
+            <div>
+                <p><b>C[n]</b> - change stroke color 1-4.</p>
+            </div>
+            <div><p><b>A[n]</b> - turns an angle n% degrees.</p></div>
+            
+        </div>
+        <div class="tutorial">
+            
+        </div>
+    </div>
+</body>
+<script src="Vector2D.js"></script>
+<script src="QDraw.js"></script>
+<script src="script.js"></script>
+</html>
